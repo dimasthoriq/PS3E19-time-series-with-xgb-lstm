@@ -5,7 +5,7 @@ Prevalent real-world adoption of deep learning models has increased the demand f
 - *Aleatoric*, variability caused by inherent stochasticity of sampling outcomes from the predictive distribution
 - *Epistemic*, uncertainty caused by the lack of knowledge of the true model or parameter uncertainty
 
-![Fig 1](https://drive.google.com/uc?id=1BzFEKq4GJLSVHoA1P5r4rtkLMCmKUOGg")
+![Fig 1](https://drive.google.com/uc?id=1BzFEKq4GJLSVHoA1P5r4rtkLMCmKUOGg)
 
 While aleatoric uncertainty cannot be reduced, epistemic uncertainty can be reduced by more data or better models. Thus, knowing how to quantify and evaluate epistemic uncertainty is a crucial element in improving the performance of deep learning models. However, current uncertainty quantification methods like Monte-Carlo (MC) dropout [3] and Deep Ensembles [4] were found to underperform when estimating epistemic uncertainty. The reason for the underperformances was mainly because these methods primarily consider only the posterior counterpart of the integrand defining epistemic uncertainty (see Fig. 1) and are subject to missing the important posterior modes when the whole integrand is large, including when the divergence counterpart is also large. 
 
